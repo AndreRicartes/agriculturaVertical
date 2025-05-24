@@ -1,8 +1,0 @@
-<attachment id="logo.svg">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <rect width="200" height="200" fill="#A8D5BA"/>
-  <circle cx="100" cy="100" r="80" fill="#4A7C2D"/>
-  <path d="M100 30 L130 80 L70 80 Z" fill="#F2F2F2"/>
-  <text x="50%" y="90%" font-family="Montserrat, sans-serif" font-size="20" text-anchor="middle" fill="#FFFFFF">Agricultura Vertical</text>
-</svg>
-</attachment>

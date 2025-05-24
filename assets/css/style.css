@@ -1,0 +1,483 @@
+/* Identidade Visual - Agricultura Vertical */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+:root {
+  /* Paleta de Cores */
+  --verde-musgo: #2E7D32;
+  --azul-claro: #4FC3F7;
+  --branco: #FFFFFF;
+  --cinza-claro: #B0BEC5;
+  --amarelo-suave: #FFCA28;
+  --cinza-escuro: #333333;
+  
+  /* Tipografia */
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Open Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-secondary);
+  background-color: var(--branco);
+  color: var(--cinza-escuro);
+  line-height: 1.6;
+}
+
+/* Tipografia */
+h1, h2, h3 {
+  font-family: var(--font-primary);
+  color: var(--verde-musgo);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--azul-claro);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--cinza-escuro);
+}
+
+/* Header/Navigation */
+.navbar {
+  background-color: var(--branco);
+  border-bottom: 2px solid var(--verde-musgo);
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(46, 125, 50, 0.1);
+}
+
+.navbar-brand {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--verde-musgo) !important;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border: 2px solid var(--verde-musgo);
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.05);
+  border-color: var(--azul-claro);
+}
+
+.nav-link {
+  font-family: var(--font-secondary);
+  color: var(--verde-musgo) !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--azul-claro) !important;
+}
+
+/* Botões */
+.btn-primary {
+  background-color: var(--amarelo-suave);
+  border-color: var(--amarelo-suave);
+  color: var(--cinza-escuro);
+  font-family: var(--font-primary);
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #E6B800;
+  border-color: #E6B800;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 202, 40, 0.3);
+}
+
+.btn-secondary {
+  background-color: var(--azul-claro);
+  border-color: var(--azul-claro);
+  color: var(--branco);
+  font-family: var(--font-primary);
+  font-weight: 600;
+}
+
+.btn-secondary:hover {
+  background-color: #29B6F6;
+  border-color: #29B6F6;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(46, 125, 50, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--branco);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(46, 125, 50, 0.15);
+}
+
+.card-header {
+  background-color: var(--verde-musgo);
+  color: var(--branco);
+  font-family: var(--font-primary);
+  font-weight: 600;
+  border-radius: 15px 15px 0 0 !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--verde-musgo) 0%, var(--azul-claro) 100%);
+  color: var(--branco);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-section h1 {
+  color: var(--branco);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-section p {
+  color: var(--branco);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Dashboard Sensores */
+.sensor-card {
+  background: linear-gradient(135deg, var(--branco) 0%, #F8F9FA 100%);
+  border-left: 4px solid var(--verde-musgo);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.sensor-value {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--azul-claro);
+}
+
+.sensor-label {
+  font-family: var(--font-secondary);
+  color: var(--verde-musgo);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+/* Mercado de Trocas */
+.produto-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.produto-card:hover {
+  transform: scale(1.02);
+}
+
+.produto-badge {
+  background-color: var(--verde-musgo);
+  color: var(--branco);
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Ícones */
+.icon-tech {
+  color: var(--azul-claro);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.icon-nature {
+  color: var(--verde-musgo);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--verde-musgo);
+  color: var(--branco);
+  padding: 40px 0 20px;
+  margin-top: 60px;
+}
+
+.footer h5 {
+  color: var(--branco);
+  font-family: var(--font-primary);
+  margin-bottom: 20px;
+}
+
+.footer a {
+  color: var(--cinza-claro);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--amarelo-suave);
+}
+
+.footer img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--branco);
+}
+
+/* Seção Produtores - Estilo Airbnb */
+.filtros-airbnb {
+  background: var(--branco) !important;
+  border: 1px solid var(--cinza-claro);
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+}
+
+.filtros-airbnb .form-label {
+  color: var(--verde-musgo);
+  font-family: var(--font-primary);
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.filtros-airbnb .form-select {
+  border: 1px solid var(--cinza-claro);
+  border-radius: 8px;
+  font-family: var(--font-secondary);
+}
+
+.filtros-airbnb .form-select:focus {
+  border-color: var(--verde-musgo);
+  box-shadow: 0 0 0 0.2rem rgba(46, 125, 50, 0.25);
+}
+
+.produtor-card {
+  transition: all 0.3s ease;
+  border-radius: 15px !important;
+  overflow: hidden;
+}
+
+.produtor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(46, 125, 50, 0.15) !important;
+}
+
+.produtor-card .card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.produtor-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.produtor-card .badge {
+  font-family: var(--font-primary);
+  font-size: 0.7rem;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.produtor-card .card-title {
+  font-family: var(--font-primary);
+  color: var(--verde-musgo);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.produtor-card .btn-sm {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.produtor-card .btn-primary {
+  background-color: var(--amarelo-suave);
+  border-color: var(--amarelo-suave);
+  color: var(--cinza-escuro);
+}
+
+.produtor-card .btn-primary:hover {
+  background-color: #E6B800;
+  border-color: #E6B800;
+  transform: translateY(-1px);
+}
+
+.produtor-card .btn-success {
+  background-color: var(--verde-musgo);
+  border-color: var(--verde-musgo);
+}
+
+.produtor-card .btn-success:hover {
+  background-color: #1B5E20;
+  border-color: #1B5E20;
+}
+
+.produtor-card .btn-outline-secondary {
+  border-color: var(--cinza-claro);
+  color: var(--verde-musgo);
+}
+
+.produtor-card .btn-outline-secondary:hover {
+  background-color: var(--verde-musgo);
+  border-color: var(--verde-musgo);
+  color: var(--branco);
+}
+
+.produtor-card .btn-outline-danger {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.produtor-card .btn-outline-danger:hover {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.text-warning {
+  color: var(--amarelo-suave) !important;
+}
+
+/* Mapa Leaflet */
+#mapa-produtores {
+  height: 400px;
+  border-radius: 0 0 15px 15px;
+  z-index: 1;
+}
+
+.mapa-loading {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 15px 15px;
+}
+
+/* Custom marker styles */
+.custom-marker {
+  background-color: var(--verde-musgo);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid var(--branco);
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.3);
+}
+
+.custom-marker.disponivel {
+  background-color: var(--verde-musgo);
+}
+
+.custom-marker.venda {
+  background-color: var(--amarelo-suave);
+}
+
+.custom-marker.doacao {
+  background-color: #dc3545;
+}
+
+/* Popup customization */
+.leaflet-popup-content-wrapper {
+  border-radius: 10px;
+  font-family: var(--font-secondary);
+}
+
+.leaflet-popup-content h6 {
+  color: var(--verde-musgo);
+  font-family: var(--font-primary);
+  margin-bottom: 0.5rem;
+}
+
+.popup-content {
+  min-width: 200px;
+}
+
+.popup-content .badge {
+  font-size: 0.7rem;
+}
+
+.popup-content .btn-sm {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .filtros-airbnb .row {
+    text-align: center;
+  }
+  
+  .produtor-card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Animações */
+.fade-in {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-up {
+  animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
