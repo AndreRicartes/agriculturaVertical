@@ -91,32 +91,6 @@ agriculturaVertical/
 - **Touch-friendly** - Gestos e interações móveis
 - **Performance otimizada** com lazy loading
 
-## 🔧 Instalação e Uso
-
-### Pré-requisitos
-- Servidor web (XAMPP, WAMP, Live Server)
-- Navegador moderno com suporte a ES6+
-
-### Instalação Local
-```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/agriculturaVertical.git
-
-# Navegue para o diretório
-cd agriculturaVertical
-
-# Inicie um servidor local
-# Opção 1: XAMPP
-# Coloque na pasta htdocs e acesse http://localhost/agriculturaVertical
-
-# Opção 2: Live Server (VS Code)
-# Instale a extensão Live Server e clique em "Go Live"
-
-# Opção 3: Python
-python -m http.server 8000
-# Acesse http://localhost:8000
-```
-
 ### Uso da Aplicação
 1. **Explore o mapa** - Clique nos marcadores para ver produtores
 2. **Filtre produtos** - Use os filtros para encontrar itens específicos
