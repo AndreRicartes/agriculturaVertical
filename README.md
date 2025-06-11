@@ -182,14 +182,14 @@ Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](L
 ## 📞 Contato
 
 **Equipe VertiGrow**
-- 🌐 Website: [seu-site.com](https://seu-site.com)
-- 📧 Email: contato@vertigrow.com
-- 💼 LinkedIn: [linkedin.com/company/vertigrow](https://linkedin.com/company/vertigrow)
+- 🌐 Website: [seu-site.com](https://agriculturavertical.com)
+- 📧 Email: contato@Agriculturavertical.com
+- 💼 LinkedIn: [linkedin.com/company/vertigrow](https://linkedin.com/company/AgriculturaVertical)
 
 ---
 
 <div align="center">
   <h3>🌱 Cultivando o futuro das cidades com tecnologia e sustentabilidade</h3>
   
-  **Feito com ❤️ para a Vitrine Inova CPS 2024**
+  **Feito com ❤️ para a VITRINE INOVA CPS edição 2025-1 - 11ª edição**
 </div>
